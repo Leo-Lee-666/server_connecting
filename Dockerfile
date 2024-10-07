@@ -10,8 +10,7 @@ WORKDIR /app
 # 프로젝트 파일 복사
 COPY . .
 
-# 의존성 설치 및 SQLite3 모듈 재빌드
-RUN npm install sqlite3 --build-from-source
+# 의존성 설치 (better-sqlite3 포함)
 RUN npm install
 
 # 앱 실행
